@@ -1,0 +1,461 @@
+@font-face {
+	font-family: 'Bourbon';
+	src: url("fonts/Bourbon.woff") format('woff');
+}
+
+/* CSS RESET */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	list-style: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers and General Styles */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: 'Bourbon';
+}
+html {
+	background: url(images/backgroundimage.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+p {
+	line-height: 2;
+	font-size: 12pt;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+h1 {
+	font-size: 20pt;
+	letter-spacing: 0.1em;
+	padding: 1rem;
+}
+h2 {
+	font-size: 16pt;
+	color: #2da9e9;
+	padding: 0.5rem;
+}
+h3 {
+	font-size: 12pt;
+	color: #5c829a;
+	padding: 0.5rem;
+}
+section {
+	padding: 0rem;
+}
+section h1 {
+	text-align: center;
+}
+.button {
+	background-color: #fff;
+	padding: 15px 0px 15px 0px;
+	box-sizing: border-box;
+	width: 50%;
+	margin-top: 25px;
+	border: 2px solid rgba(45, 169, 233, 0.5);
+	margin-left: 25%;
+}
+
+/* Header and navigation styles */
+
+header {
+	text-align: center;
+	background-color: #faffff;
+	color: #000;
+	border-bottom: 5px solid #2da9e9;
+}
+header p {
+	font-size: 40pt;
+}
+header img {
+	min-width: 2%;
+	max-width: 2%;
+}
+.nav {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.nav li {
+	display: inline;
+}
+.nav a {
+	display: inline-block;
+	padding: 1rem;
+	text-decoration: none;
+	font-size: 14px;
+	color: #000;
+}
+.nav a:hover {
+	color: #09F;
+	background-color: #fff
+}
+.active {
+	border-bottom: 2px solid rgba(45, 169, 233, 0.5);
+}
+
+/* Our resorts styles */
+
+.resort {
+	margin-left: 20%;
+	margin-bottom: 2.5%;
+	padding: 1rem;
+	background-color: #fff;
+	box-sizing: border-box;
+	width: 60%;
+	border: 2px solid rgba(45, 169, 233, .2);
+	text-align: center;
+}
+.resort img {
+	max-width: 35%;
+	padding: 0.5rem;
+	box-sizing: border-box;
+	min-height: 100%;
+	border: 2px solid rgba(45, 169, 233, .2);
+}
+.resort p {
+	font-size: 10pt;
+	text-align: left;
+	line-height: 2;
+	padding: 1rem;
+	box-sizing: border-box;
+}
+.resort-text {
+	box-sizing: border-box;
+	width: 40% vertical-align: top;
+}
+
+/* Packages styles */
+
+.package {
+	margin-left: 20%;
+	margin-bottom: 2.5%;
+	margin-right: 2%;
+	padding: 1rem;
+	background-color: #fff;
+	box-sizing: border-box;
+	width: 28%;
+	border: 2px solid rgba(45, 169, 233, .2);
+	text-align: center;
+	display: inline-block;
+}
+.package1 {
+	margin-right: 20%;
+	margin-bottom: 2.5%;
+	margin-left: 2%;
+	padding: 1rem;
+	background-color: #fff;
+	box-sizing: border-box;
+	width: 28%;
+	border: 2px solid rgba(45, 169, 233, .2);
+	text-align: center;
+	display: inline-block;
+}
+.package-text h3 {
+	text-align: 0;
+	padding-top: 25px;
+}
+
+/* Special offers styles */
+
+.special-offer {
+	padding: 1rem;
+	background-color: #fff;
+	box-sizing: border-box;
+	width: 18%;
+	border: 2px solid rgba(45, 169, 233, .2);
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+}
+.a {
+	margin-left: 20%;
+	margin-right: 2%;
+}
+.b {
+	margin-left: 1%;
+	margin-right: 1%;
+}
+.c {
+	margin-left: 2%;
+	margin-right: 20%;
+}
+.star {
+	color: #ef5858;
+}
+.req {
+	margin-top: 10%;
+	font-size: 6pt;
+}
+.req p {
+	font-size: 8pt;
+	text-align: left;
+}
+
+/* Ski center styles */
+
+.ski-center {
+	padding: 1rem;
+	background-color: #fff;
+	box-sizing: border-box;
+	width: 60%;
+	margin-left: 20%;
+	border: 2px solid rgba(45, 169, 233, .2);
+	text-align: left;
+}
+.ski-center p {
+	font-size: 10pt;
+	text-align: left;
+	line-height: 2;
+	padding: 1rem;
+}
+.ski-center img {
+	max-width: 20%;
+	margin-right: 10%;
+	border: 2px solid rgba(45, 169, 233, .2);
+}
+
+/* Booking styles */
+
+.booking {
+	padding: 1rem;
+	background-color: #fff;
+	box-sizing: border-box;
+	width: 60%;
+	margin-left: 20%;
+	border: 2px solid rgba(45, 169, 233, .2);
+	text-align: left;
+}
+input, select {
+	border: 2px solid rgba(45, 169, 233, .2);
+	width: 100%;
+	padding-bottom: 10px;
+	margin-bottom: 30px;
+	font-family: 'Bourbon';
+	padding: 1rem;
+	box-sizing: border-box;
+}
+form {
+	width: 50%;
+	margin-left: 25%;
+}
+.button1 input {
+	color: #000;
+	width: 50%;
+	border: 2px solid rgba(45, 169, 233, .2);
+	line-height: 2;
+	padding: 20px;
+	margin-left: 25%;
+	cursor: pointer;
+	box-sizing: border-box;
+	font-family: 'Bourbon';
+	background-color: #fff;
+}
+.button1 input:hover {
+	background-color: #fff;
+	color: #151513;
+	border: 2px solid rgba(0, 0, 0, .2);
+}
+
+/* Contact styles */
+
+.contact {
+	padding: 1rem;
+	background-color: #fff;
+	box-sizing: border-box;
+	width: 60%;
+	margin-left: 20%;
+	border: 2px solid rgba(45, 169, 233, .2);
+	text-align: left;
+}
+.contact p {
+	font-size: 10pt;
+	text-align: left;
+	line-height: 2;
+	padding: 1rem;
+}
+
+/* Footer styles */
+
+footer {
+	color: #fff;
+	text-align: center;
+	font-size: 8pt;
+	padding: 1rem;
+	width: 100%;
+}
+
+/* Responsive styles */
+
+@media only screen and (max-width: 1024px) {
+	.resort {
+		margin-left: 10%;
+		width: 80%;
+	}
+	.resort img {
+		max-width: 55%;
+	}
+	.resort-text {
+		width: 60% vertical-align: top;
+	}
+	header p {
+		font-size: 30pt;
+	}
+	header img {
+		min-width: 3%;
+		max-width: 3%;
+	}
+	.nav a {
+		padding: 0.5rem;
+		font-size: 12px;
+	}
+	.package {
+		margin-left: 10%;
+		width: 80%;
+	}
+	.package1 {
+		margin-left: 10%;
+		width: 80%;
+		margin-right: 0;
+	}
+	.special-offer {
+		width: 80%;
+		margin-left: 10%;
+		margin-bottom: 2.5%;
+	}
+	.a {
+		margin-left: 10%;
+		margin-right: 0%;
+	}
+	.b {
+		margin-left: 10%;
+		margin-right: 0%;
+	}
+	.c {
+		margin-left: 10%;
+		margin-right: 0%;
+	}
+	.req {
+		margin-top: 5%;
+		font-size: 6pt;
+	}
+	.ski-center {
+		width: 80%;
+		margin-left: 10%;
+	}
+	.ski-center img {
+		max-width: 29%;
+		margin-right: 3.33%;
+	}
+	.booking {
+		width: 80%;
+		margin-left: 10%;
+	}
+	form {
+		width: 80%;
+		margin-left: 10%;
+	}
+}
+@media only screen and (max-width: 640px) {
+	header p {
+		font-size: 20pt;
+	}
+	header img {
+		min-width: 3%;
+		max-width: 3%;
+	}
+	.nav a {
+		padding: 0.5rem;
+		font-size: 12px;
+	}
+	.resort {
+		margin-left: 5%;
+		width: 90%;
+	}
+	.resort img {
+		max-width: 70%;
+	}
+	.resort-text {
+		width: 80% vertical-align: top;
+	}
+	.package {
+		margin-left: 5%;
+		width: 90%;
+	}
+	.package1 {
+		margin-left: 5%;
+		width: 90%;
+		margin-right: 0;
+	}
+	.special-offer {
+		width: 90%;
+		margin-bottom: 2.5%;
+	}
+	.a {
+		margin-left: 5%;
+		margin-right: 0%;
+	}
+	.b {
+		margin-left: 5%;
+		margin-right: 0%;
+	}
+	.c {
+		margin-left: 5%;
+		margin-right: 0%;
+	}
+	.ski-center {
+		width: 90%;
+		margin-left: 5%;
+	}
+	.ski-center img {
+		max-width: 80%;
+		margin-right: 0%;
+		margin-left: 10%;
+		margin-bottom: 2.5%;
+	}
+	.booking {
+		width: 90%;
+		margin-left: 5%;
+	}
+	form {
+		width: 90%;
+		margin-left: 5%;
+	}
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ScotSki - Booking</title>
+	<link href="styles.css" rel="stylesheet" type="text/css">
+	<!--Favicon-->
+	<link href="images/logo.png" rel="shortcut icon">
+	<!--Metadata-->
+	<meta content="initial-scale=1.0, maximum-scale=1.0" name="viewport">
+</head>
+<body>
+<!--Header and Navigation-->
+	<header>
+	<p><img src="images/logo.png" /><a href="index.html">SCOTSKI RESORT</a></p>
+		<ul class="nav">
+			<a href="index.html"><li>Our Resorts</li></a>
+			<a href="packages.html"><li>Packages</li></a>
+			<a href="specialoffers.html"><li>Special Offers</li></a>
+			<a href="skicenter.html"><li>Ski Center</li></a>
+			<a href="booking.html"><li class="active">Booking</li></a>
+			<a href="contact.html"><li>Contact</li></a>
+		</ul>
+	</header>
+<!--Content-->
+	<section style="font-size:0;">
+		<h1>Booking</h1>
+		<div class="booking">
+			<form action="send_form_email.php" id="bookingform" method="post" name="bookingform">
+				<h2>Fill in the form below:</h2>
+				<h3>First Name:</h3><input name="first_name" required="" type="text">
+				<h3>Last Name:</h3><input name="last_name" required="" type="text">
+				<h3>Date of arrival:</h3><input id="dateofarrival" required="" type="date">
+				<h3>Date of departure:</h3><input id="dateofdeparture" required="" type="date">
+				<h3>Resort:</h3><select>
+					<option value="glencoe">
+						Glencoe
+					</option>
+					<option value="caringorm">
+						Caringorm
+					</option>
+					<option value="nevisrange">
+						Nevis Range
+					</option>
+					<option value="glenshee">
+						Glenshee
+					</option>
+					<option value="thelecht">
+						The Lecht
+					</option>
+				</select>
+				<h3>Package type:</h3><select>
+					<option value="none">
+						None
+					</option>
+					<option value="single">
+						Single
+					</option>
+					<option value="couples">
+						Couples
+					</option>
+					<option value="family">
+						Family
+					</option>
+					<option value="groups">
+						Groups
+					</option>
+				</select>
+				<h3>Special offer:</h3><select>
+					<option value="none">
+						None
+					</option>
+					<option value="couplessp">
+						Couples
+					</option>
+					<option value="familysp">
+						Family
+					</option>
+					<option value="groupssp">
+						Groups
+					</option>
+				</select>
+				<h3>No. Of People:</h3><select>
+					<option value="none">
+						None
+					</option>
+					<option value="1">
+						1
+					</option>
+					<option value="2">
+						2
+					</option>
+					<option value="3">
+						3
+					</option>
+					<option value="2">
+						4
+					</option>
+					<option value="3">
+						5
+					</option>
+				</select>
+				<h3>Email Address:</h3><input name="email" required="" type="text">
+				<h3>Telephone Number:</h3><input name="telephone" required="" type="text">
+				<p></p><!--Contact form button-->
+				<div class="button1">
+					<input type="submit" value="submit">
+				</div>
+				<p></p>
+			</form>
+		</div>
+<!--Footer-->			
+	</section>
+	<footer>
+		ScotSki 2017. &copy; All rights reserved.
+	</footer>
+</body>
+</html>
